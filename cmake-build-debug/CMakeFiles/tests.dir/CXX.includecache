@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/TwoSum.h
+vector
+-
+
+/home/jfrancis/Documents/leetCodeGrind/tests/test.cpp
+iostream
+-
+catch2/catch_all.hpp
+-
+catch2/catch_test_macros.hpp
+-
+TwoSum.h
+-
+
