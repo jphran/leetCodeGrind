@@ -114,8 +114,6 @@ leetCodeGrind_EXTERNAL_OBJECTS =
 leetCodeGrind: CMakeFiles/leetCodeGrind.dir/main.cpp.o
 leetCodeGrind: CMakeFiles/leetCodeGrind.dir/src/TwoSum.cpp.o
 leetCodeGrind: CMakeFiles/leetCodeGrind.dir/build.make
-leetCodeGrind: /usr/local/lib/libCatch2Main.a
-leetCodeGrind: /usr/local/lib/libCatch2.a
 leetCodeGrind: CMakeFiles/leetCodeGrind.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jfrancis/Documents/leetCodeGrind/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable leetCodeGrind"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/leetCodeGrind.dir/link.txt --verbose=$(VERBOSE)

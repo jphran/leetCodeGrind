@@ -13,7 +13,7 @@ vector<int> Solution::twoSum(vector<int>& nums, int target) {
     int first = nums.at(i);
     for (int j = i + 1; j < nums.size(); ++j) {
       if(first + nums.at(j) == target)
-        return {j, i};
+        return {i, j};
     }
   }
   return {};

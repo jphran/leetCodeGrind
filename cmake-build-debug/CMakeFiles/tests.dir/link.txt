@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/tests.dir/tests/test.cpp.o  -o tests 
+/usr/bin/c++  -g   CMakeFiles/tests.dir/tests/test.cpp.o CMakeFiles/tests.dir/src/TwoSum.cpp.o  -o tests 
