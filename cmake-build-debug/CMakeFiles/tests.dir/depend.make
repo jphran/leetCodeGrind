@@ -5,5 +5,6 @@ CMakeFiles/tests.dir/src/TwoSum.cpp.o: ../include/TwoSum.h
 CMakeFiles/tests.dir/src/TwoSum.cpp.o: ../src/TwoSum.cpp
 
 CMakeFiles/tests.dir/tests/test.cpp.o: ../include/TwoSum.h
+CMakeFiles/tests.dir/tests/test.cpp.o: ../include/catch.hpp
 CMakeFiles/tests.dir/tests/test.cpp.o: ../tests/test.cpp
 
