@@ -9,3 +9,6 @@ Call Stack (most recent call first):
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/jfrancis/Documents/leetCodeGrind/cmake-build-debug
+
+Problems were encountered while collecting compiler information:
+	c++: error: unrecognized command line option '-std=gnu++2a'; did you mean '-std=gnu++03'?
