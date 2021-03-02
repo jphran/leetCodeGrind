@@ -21,9 +21,7 @@ TEST_CASE("Given an array of integers nums and an integer target, "
     REQUIRE(s.twoSum(nums, target) == ans);
 }
 
-TEST_CASE("Given an array of integers nums and an integer target, "
-          "return indices of the two numbers such that they add up to target."
-, "[TwoSum1]") {
+TEST_CASE("Test 2", "[TwoSum]") {
   std::vector<int> nums{3,2,4};
   int target = 6;
   std::vector<int> ans{1,2};
