@@ -8,7 +8,7 @@
 ## Completed:
 ### Easy:
 1. <a href="https://leetcode.com/problems/two-sum/">TwoSum</a> with tests
-
+2. <a href="https://leetcode.com/problems/can-place-flowers/">CanPlantFlowers</a> with tests
 ### Medium:
 1. <a href="https://leetcode.com/problems/lru-cache/">LRUCache</a> with tests
 

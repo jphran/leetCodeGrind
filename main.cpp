@@ -1,11 +1,14 @@
 #include <iostream>
-#include <TwoSum.h>
+#include <map>
+#include <vector>
+#include <set>
 
 int main() {
-    std::vector<int> nums{3,2,4};
-    Solution s;
-    auto vals = s.twoSum(nums, 6);
-    std::cout << vals[0] << vals[1] << std::endl;
-    std::cout << "Hello, World!" << std::endl;
+    std::multiset<std::pair<int, int>> s;
+    for(int i = 0; i < 10; ++i)
+      s.insert(std::pair<int, int> (10-i, i * 5));
+
+    for(auto thing : s)
+      std::cout << thing.first << "\t" << thing.second << std::endl;
     return 0;
 }
