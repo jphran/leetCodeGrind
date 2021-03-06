@@ -3,7 +3,7 @@
 ## Resources:
 1. <img src="https://i.stack.imgur.com/k0Iuh.png" alt="Data Struct Cheat Sheet">
 2. <a href="https://users.cs.northwestern.edu/~riesbeck/programming/c++/stl-summary.html#set">STL container fn time complexity</a>
-
+3. <a href="https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-100-LeetCode-Questions-to-Save-Your-Time-OaM1orEU">Study List</a>
 
 ## Completed:
 ### Easy:
@@ -11,6 +11,7 @@
 2. <a href="https://leetcode.com/problems/can-place-flowers/">CanPlantFlowers</a> with tests
 ### Medium:
 1. <a href="https://leetcode.com/problems/lru-cache/">LRUCache</a> with tests
+2. <a href="https://leetcode.com/problems/sum-of-two-integers/">SumOfTwoInts<a/> (bitwise operations) with tests
 
 ### Hard:
 

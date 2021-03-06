@@ -38,3 +38,7 @@ public:
 };
 
 #endif // LEETCODEGRIND_BESTTIMETOBUYSELLSTOCK_H
+
+
+// Community soln uses kadane's algo (max subarray algo)
+// which accounts for negative sums duh

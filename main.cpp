@@ -3,12 +3,51 @@
 #include <vector>
 #include <set>
 
-int main() {
-    std::multiset<std::pair<int, int>> s;
-    for(int i = 0; i < 10; ++i)
-      s.insert(std::pair<int, int> (10-i, i * 5));
+void bin(unsigned n)
+{
+  if (n > 1)
+    bin(n >> 1);
 
-    for(auto thing : s)
-      std::cout << thing.first << "\t" << thing.second << std::endl;
-    return 0;
+  printf("%d", n & 1);
 }
+
+
+int main() {
+  uint8_t a = 4;
+  uint8_t b = 120;
+  int sum = 0;
+  bool carry = false;
+  bool first;
+  bool second;
+  uint8_t bitmask = 0x01;
+  for(int i = 0; i < sizeof(a) * 8; ++i) {
+    first = a & (1 << i);
+    second = b & (1 << i);
+    bool isOne = ((first ^ second) ^ carry);
+    if(isOne)
+      sum |= (1 << i);
+    else
+      sum &= ~(1 << i);
+    carry = ((first ^ second) & carry) | (first & second);
+  }
+
+  std::cout << sum;
+
+  return 0;
+}
+
+//int sum = 0;
+//bool carry = false;
+//bool first;
+//bool second;
+//uint8_t bitmask = 0x01;
+//for(int i = 0; i < sizeof(a) * 8; ++i) {
+//first = a & (1 << i);
+//second = b & (1 << i);
+//bool isOne = ((first ^ second) ^ carry);
+//if(isOne)
+//sum |= (1 << i);
+//else
+//sum &= ~(1 << i);
+//carry = ((first ^ second) & carry) | (first & second);
+//}
