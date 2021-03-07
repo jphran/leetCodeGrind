@@ -9,6 +9,8 @@
 ### Easy:
 1. <a href="https://leetcode.com/problems/two-sum/">TwoSum</a> with tests
 2. <a href="https://leetcode.com/problems/can-place-flowers/">CanPlantFlowers</a> with tests
+3. <a href="https://leetcode.com/problems/number-of-1-bits/">NumberOf1Bits</a> they literally gave the link to the soln on wikipedia...
+
 ### Medium:
 1. <a href="https://leetcode.com/problems/lru-cache/">LRUCache</a> with tests
 2. <a href="https://leetcode.com/problems/sum-of-two-integers/">SumOfTwoInts<a/> (bitwise operations) with tests
