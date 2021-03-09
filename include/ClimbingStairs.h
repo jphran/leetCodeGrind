@@ -9,18 +9,62 @@
 #ifndef LEETCODEGRIND_CLIMBINGSTAIRS_H
 #define LEETCODEGRIND_CLIMBINGSTAIRS_H
 
+// fibonacci dynamic programming approach
 class Solution {
 public:
-    int climbStairs(int n) {
-        int waysToClimb = 0;
+    static int climbStairs(int n) {
+        if(n == 1)
+            return 1;
 
-        for(int i = 0; i < n; ++i) {
-            for(int j = i; j < n ++j){
+        int waysToClimb[n];
+        waysToClimb[0] = 1;
+        waysToClimb[1] = 2;
 
-            }
+        for(int i = 2; i < n; ++i) {
+            waysToClimb[i] = waysToClimb[i - 1] + waysToClimb[i - 2];
         }
-        return 0;
+
+        return waysToClimb[n-1];
     }
 };
 
 #endif //LEETCODEGRIND_CLIMBINGSTAIRS_H
+
+
+// fibonacci dynamic programming approach
+//class Solution {
+//public:
+//    static int climbStairs(int n) {
+//        if(n == 1)
+//            return 1;
+//
+//        int waysToClimb[n];
+//        waysToClimb[0] = 1;
+//        waysToClimb[1] = 2;
+//
+//        for(int i = 2; i < n; ++i) {
+//            waysToClimb[i] = waysToClimb[i - 1] + waysToClimb[i - 2];
+//        }
+//
+//        return waysToClimb[n-1];
+//    }
+//};
+
+// my first recursive soln, too slow
+//class Solution {
+//private:
+//    int climbStairsRecursive(int n){
+//        switch(n) {
+//            case 1:
+//                return 1;
+//            case 2:
+//                return 2;
+//            default:
+//                return climbStairsRecursive(n - 1) + climbStairsRecursive(n - 2);
+//        }
+//    }
+//public:
+//    int climbStairs(int n) {
+//        return climbStairsRecursive(n);
+//    }
+//};

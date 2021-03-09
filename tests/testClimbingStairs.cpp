@@ -9,15 +9,18 @@ TEST_CASE("basic fn test for climbing stairs", "[ClimbingStairs]") {
     int stairs = 2;
     int waysToClimb = 2;
     Solution s;
-
     REQUIRE(s.climbStairs(stairs) == waysToClimb);
 
     stairs = 3;
     waysToClimb = 3;
-
     REQUIRE(s.climbStairs(stairs) == waysToClimb);
 
     stairs = 4;
-    waysToClimb = 4;
+    waysToClimb = 5;
+    REQUIRE(s.climbStairs(stairs) == waysToClimb);
+
+//    stairs = 45;
+//    waysToClimb = 1134903170;
+//    REQUIRE(s.climbStairs(stairs) == waysToClimb);
 }
 
