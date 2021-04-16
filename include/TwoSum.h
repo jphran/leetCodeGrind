@@ -6,11 +6,22 @@
 #define LEETCODEGRIND_TWOSUM_H
 
 #include <vector>
+using namespace std;
 
 class Solution {
 public:
-  std::vector<int> twoSum(std::vector<int>& nums, int target);
+    vector<int> twoSum(vector<int> &nums, int target) {
+        for (int i = 0; i <= nums.size(); ++i) {
+            int first = nums.at(i);
+            for (int j = i + 1; j < nums.size(); ++j) {
+                if (first + nums.at(j) == target)
+                    return {i, j};
+            }
+        }
+        return {};
+    }
 };
+
 
 #endif //LEETCODEGRIND_TWOSUM_H
 
