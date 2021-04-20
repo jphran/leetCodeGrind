@@ -16,7 +16,8 @@
 ### Medium:
 1. <a href="https://leetcode.com/problems/lru-cache/">LRUCache</a> with tests
 2. <a href="https://leetcode.com/problems/sum-of-two-integers/">SumOfTwoInts<a/> (bitwise operations) with tests
-3. 
+3. <a href="https://leetcode.com/problems/set-matrix-zeroes/">SetMatrixZeros</a> with tests
+
 
 ### Hard:
 
