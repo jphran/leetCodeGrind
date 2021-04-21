@@ -11,6 +11,9 @@
 1. <a href="https://leetcode.com/problems/two-sum/">TwoSum</a> with tests
 1. <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/">BestTimeTOBuyAndSellStock</a> with tests
 
+#### Binary:
+1. <a href="https://leetcode.com/problems/missing-number/">MissingNumber</a>
+
 #### Uncat:
 1. <a href="https://leetcode.com/problems/can-place-flowers/">CanPlantFlowers</a> with tests
 1. <a href="https://leetcode.com/problems/number-of-1-bits/">NumberOf1Bits</a> they literally gave the link to the soln on wikipedia...

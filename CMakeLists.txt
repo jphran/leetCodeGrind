@@ -9,12 +9,12 @@ add_executable(${PROJECT_NAME} main.cpp
         include/LRUCache.h
         include/BestTimeToBuySellStock.h
         include/SumOfTwoIntegers.h
-        include/NumberOf1Bits.h
+        include/binary/NumberOf1Bits.h
         include/ClimbingStairs.h
         include/CoinChange.h
         include/ReverseLinkedList.h
         include/SetMatrixZeroes.h
-        include/string/LongestSubstringWithoutRepeatingCharacters.h include/tree/MaximumDepthOfBinaryTree.h include/array/ProductOfArrayExceptSelf.h)
+        include/string/LongestSubstringWithoutRepeatingCharacters.h include/tree/MaximumDepthOfBinaryTree.h include/array/ProductOfArrayExceptSelf.h include/binary/MissingNumber.h)
 
 # TESTING
 find_package(Catch2 REQUIRED)
@@ -24,7 +24,7 @@ add_executable(tests tests/testMain.cpp
         include/CanPlaceFlowers.h tests/testCanPlaceFlowers.cpp
         include/BestTimeToBuySellStock.h tests/testBestTimeToBuySellStock.cpp
         include/SumOfTwoIntegers.h tests/testSumOfTwoIntegers.cpp
-        include/NumberOf1Bits.h
+        include/binary/NumberOf1Bits.h
         include/ClimbingStairs.h tests/testClimbingStairs.cpp
         include/CoinChange.h tests/testCoinChange.cpp
         tests/testReverseLinkedList.cpp
