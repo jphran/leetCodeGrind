@@ -26,4 +26,4 @@
 
 ## Unfinished
 - <a href="https://leetcode.com/problems/coin-change/">CoinChange</a>
-- 
+- <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">LongestSubstringWithoutRepeatingCharacters</a> wtf, i'm so dumb
