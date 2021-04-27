@@ -1,13 +1,12 @@
 //
-// Created by jfrancis on 2/28/21.
+// Created by jfrancis on 4/21/21.
 //
 
-#define CATCH_CONFIG_MAIN
+#ifndef LEETCODEGRIND_FIBSEQ_H
+#define LEETCODEGRIND_FIBSEQ_H
 
-#include <catch2/catch.hpp>
-#include <unordered_set>
-#include <iostream>
 #include <chrono>
+#include <vector>
 
 class Timer
 {
@@ -42,31 +41,13 @@ int fibSeq(int n, std::vector<int>& memo) {
     return result;
 }
 
-TEST_CASE("x", "[Main]") {
-    std::vector<int> memoization = {0, 1, 1};
-
-    Timer t;
-    for(int i = 0; i < 40; ++i) {
-        fibSeq(i, memoization);
-    }
-    std::cout << fibSeq(20, memoization) << std::endl;
-    std::cout << t.elapsed() << std::endl;
-}
-
 int naiveFibSeq(int n) {
     if(n == 0)
         return 0;
     if(n <= 2)
         return 1;
 
-   return naiveFibSeq(n - 1) + naiveFibSeq(n - 2);
+    return naiveFibSeq(n - 1) + naiveFibSeq(n - 2);
 }
 
-TEST_CASE("x1", "[Main]") {
-    Timer t;
-    for(int i = 0; i < 40; ++i) {
-        naiveFibSeq(i);
-    }
-    std::cout << naiveFibSeq(20) << std::endl;
-    std::cout << t.elapsed() << std::endl;
-}
+#endif //LEETCODEGRIND_FIBSEQ_H

@@ -27,6 +27,8 @@
 #### Arrays:
 1. <a href="https://leetcode.com/problems/product-of-array-except-self/">ProductOfArrayExceptSelf</a>
 
+#### Graphs:
+
 #### Uncat:
 1. <a href="https://leetcode.com/problems/lru-cache/">LRUCache</a> with tests
 1. <a href="https://leetcode.com/problems/sum-of-two-integers/">SumOfTwoInts<a/> (bitwise operations) with tests
@@ -42,4 +44,6 @@
 ## Unfinished
 - <a href="https://leetcode.com/problems/coin-change/">CoinChange</a>
 - <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">LongestSubstringWithoutRepeatingCharacters</a> wtf, i'm so dumb
-- 
+- <a href="https://leetcode.com/problems/word-break/">WordBreak</a>
+- <a href="https://leetcode.com/problems/course-schedule/>CourseSchedule</a>
+

@@ -14,7 +14,12 @@ add_executable(${PROJECT_NAME} main.cpp
         include/CoinChange.h
         include/ReverseLinkedList.h
         include/SetMatrixZeroes.h
-        include/string/LongestSubstringWithoutRepeatingCharacters.h include/tree/MaximumDepthOfBinaryTree.h include/array/ProductOfArrayExceptSelf.h include/binary/MissingNumber.h)
+        include/string/LongestSubstringWithoutRepeatingCharacters.h
+        include/tree/MaximumDepthOfBinaryTree.h
+        include/array/ProductOfArrayExceptSelf.h
+        include/binary/MissingNumber.h
+        include/dynamic_programing/WordBreak.h
+        include/FibSeq.h include/graph/CourseSchedule.h)
 
 # TESTING
 find_package(Catch2 REQUIRED)
@@ -29,7 +34,11 @@ add_executable(tests tests/testMain.cpp
         include/CoinChange.h tests/testCoinChange.cpp
         tests/testReverseLinkedList.cpp
         include/SetMatrixZeroes.h tests/testSetMatrixZeroes.cpp
-        include/string/LongestSubstringWithoutRepeatingCharacters.h tests/testLongestSubstringWithoutRepeatingCharacters.cpp include/tree/MaximumDepthOfBinaryTree.h tests/testMaximumDepthOfBinaryTree.cpp include/array/ProductOfArrayExceptSelf.h tests/testProductOfArrayExceptSelf.cpp)
+        include/string/LongestSubstringWithoutRepeatingCharacters.h tests/testLongestSubstringWithoutRepeatingCharacters.cpp
+        include/tree/MaximumDepthOfBinaryTree.h tests/testMaximumDepthOfBinaryTree.cpp
+        include/array/ProductOfArrayExceptSelf.h tests/testProductOfArrayExceptSelf.cpp
+        include/dynamic_programing/WordBreak.h
+        include/FibSeq.h tests/testWordBreak.cpp include/graph/CourseSchedule.h tests/testCourseSchedule.cpp)
 target_link_libraries(${PROJECT_NAME} Catch2::Catch2)
 include(CTest)
 include(ParseAndAddCatchTests)

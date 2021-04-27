@@ -2,11 +2,26 @@
 #include <map>
 #include <vector>
 #include <set>
+#include <unordered_map>
+
+enum CLOTHES {
+    JEANS = 0,
+    SHOES,
+    SKIRTS,
+    TOPS
+};
 
 int main() {
-    std::cout << (1 / 2.0) << std::endl;
-    std::cout << (3 / 2.0) << std::endl;
-    std::cout << (5 / 2.0) << std::endl;
+    std::vector<int> prices = {3, 4, 5, 2, 1};
+    std::set<int> priceSet(prices.begin(), prices.end());
+    auto pointer = priceSet.upper_bound(5);
+
+    int num = 0;
+    while(pointer != priceSet.end()) {
+        num++;
+        pointer++;
+    }
+
     return 0;
 }
 
