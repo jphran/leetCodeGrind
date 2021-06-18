@@ -1,6 +1,7 @@
 //
 // Created by jfrancis on 3/2/21.
 //
+#define CATCH_CONFIG_MAIN
 
 #include <catch2/catch.hpp>
 #include <vector>
@@ -52,3 +53,58 @@ TEST_CASE("hmmm", "[CanPlaceFlowers]") {
   REQUIRE(c.canPlaceFlowers(flowerBed, 6) == true);
   REQUIRE_FALSE(c.canPlaceFlowers(flowerBed, 7));
 }
+
+//Summary:
+//
+//Given a set of associations find the shortest number of steps to get to the destination.
+//
+//Return -1 if there is no path.
+//
+//Parameters:
+//- StartToEndNodes: Holds the the start and the destination [StartNode, EndNode]
+//- NodeStarts: A list of start elements for the graph. ["StartofPathA","StartOfPathB", ...]
+//- NodeEnds: A list of end elements for the graph. ["EndOfPathA","EndOfPathB", ...]
+//
+//Paths are constructed using each i index of the arrays
+//        NodeStarts[0] -> NodeEnds[0], NodeStarts[1] -> NodeEnds[1], ..., NodeStarts[i] -> NodeEnds[i],
+//
+//---
+//
+//Example 1:
+//
+//Find the Path from A to C given the graph A->B,B->C
+//
+//        Solution:
+//2 (A->B->C)
+//
+//Parameters:
+//- StartToEndNodes: ["A","C"]
+//- NodeStarts: ["A","B"]
+//- NodeEnds: ["B","C"]
+//
+//---
+//
+//Example 2:
+//
+//Find the path from B to G given the graph A->B, B->C, C->E, E->F, F->G.
+//
+//Solution:
+//4 (B->C->E->F->G)
+//
+//Parameters:
+//- StartToEndNodes: ["B","G"]
+//- NodeStarts: ["A","B","C",E","F"]
+//- NodeEnds: ["B","C","E",F","G"]
+//
+//---
+//Example 3:
+//
+//Find the path from A to C given the graph A->B, B->C, A->C
+//
+//        Solution:
+//1 (A->C). This is shorter than (A->B->C).
+//
+//Parameters:
+//- StartToEndNodes: ["A","C"]
+//- NodeStarts: ["A","B","A"]
+//- NodeEnds: ["B","C","C"]]

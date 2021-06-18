@@ -2,6 +2,8 @@
 // Created by jfrancis on 4/23/21.
 //
 
+#define CATCH_CONFIG_MAIN
+
 #include <catch2/catch.hpp>
 #include "graph/CourseSchedule.h"
 #include <vector>

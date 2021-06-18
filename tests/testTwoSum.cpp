@@ -1,8 +1,11 @@
 //
 // Created by jfrancis on 3/2/21.
 //
+
+#define CATCH_CONFIG_MAIN
+
 #include <catch2/catch.hpp>
-#include "TwoSum.h"
+#include "array/TwoSum.h"
 
 //********************TWO SUM*************************
 TEST_CASE("Given an array of integers nums and an integer target, "

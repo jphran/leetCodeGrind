@@ -2,9 +2,11 @@
 // Created by jfrancis on 3/3/21.
 //
 
+#define CATCH_CONFIG_MAIN
+
 #include <catch2/catch.hpp>
 #include <vector>
-#include "BestTimeToBuySellStock.h"
+#include "array/BestTimeToBuySellStock.h"
 
 TEST_CASE("Simple Fn Test stock", "[BestTimeToBuySellStock]") {
   std::vector<int> prices = {7,1,5,3,6,4};

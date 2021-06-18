@@ -2,6 +2,8 @@
 // Created by jfrancis on 4/21/21.
 //
 
+#define CATCH_CONFIG_MAIN
+
 #include <catch2/catch.hpp>
 #include <vector>
 #include "array/ProductOfArrayExceptSelf.h"

@@ -2,8 +2,10 @@
 // Created by jfrancis on 4/15/21.
 //
 
+#define CATCH_CONFIG_MAIN
+
 #include <catch2/catch.hpp>
-#include "ReverseLinkedList.h"
+#include "linked_list/ReverseLinkedList.h"
 #include <iostream>
 
 //********************TWO SUM*************************

@@ -2,8 +2,10 @@
 // Created by jfrancis on 4/19/21.
 //
 
+#define CATCH_CONFIG_MAIN
+
 #include <catch2/catch.hpp>
-#include "SetMatrixZeroes.h"
+#include "matrix/SetMatrixZeroes.h"
 #include <iostream>
 #include <vector>
 
