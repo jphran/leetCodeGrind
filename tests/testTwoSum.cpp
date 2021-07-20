@@ -28,3 +28,4 @@ TEST_CASE("Test 2", "[TwoSum]") {
 
     REQUIRE(s.twoSum(nums, target) == ans);
 }
+

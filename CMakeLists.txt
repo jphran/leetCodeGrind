@@ -38,5 +38,6 @@ add_executable(testLongestSubstringWithoutRepeatingCharacters include/string/Lon
 add_executable(testMaximumDepthOfBinaryTree include/tree/MaximumDepthOfBinaryTree.h tests/testMaximumDepthOfBinaryTree.cpp)
 add_executable(testProductOfArrayExceptSelf include/array/ProductOfArrayExceptSelf.h tests/testProductOfArrayExceptSelf.cpp)
 add_executable(testFibSeq include/FibSeq.h tests/testWordBreak.cpp include/graph/CourseSchedule.h tests/testCourseSchedule.cpp)
+add_executable(testContainsDuplicate include/array/ContainsDuplicate.h tests/testContainsDuplicate.cpp)
 
 target_link_libraries(${PROJECT_NAME} Catch2::Catch2)
