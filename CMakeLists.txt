@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.17)
 project(leetCodeGrind)
 
+cmake_policy(SET CMP0110 NEW)
 set(CMAKE_CXX_STANDARD 20)
 
 include_directories(./include)
@@ -24,7 +25,7 @@ add_executable(${PROJECT_NAME} main.cpp
 # TESTING
 find_package(Catch2 REQUIRED)
 add_executable(tests tests/testMain.cpp
-        include/TwoSum.h tests/testTwoSum.cpp
+        include/array/TwoSum.h tests/testTwoSum.cpp
         include/LRUCache.h tests/testLRUCache.cpp
         include/CanPlaceFlowers.h tests/testCanPlaceFlowers.cpp
         include/BestTimeToBuySellStock.h tests/testBestTimeToBuySellStock.cpp
