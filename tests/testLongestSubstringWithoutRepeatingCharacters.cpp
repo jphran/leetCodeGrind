@@ -2,6 +2,8 @@
 // Created by jfrancis on 4/19/21.
 //
 
+#define CATCH_CONFIG_MAIN
+
 #include <catch2/catch.hpp>
 #include <iostream>
 #include <vector>

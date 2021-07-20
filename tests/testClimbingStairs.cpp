@@ -1,8 +1,11 @@
 //
 // Created by jfrancis on 3/8/21.
 //
+
+#define CATCH_CONFIG_MAIN
+
 #include <catch2/catch.hpp>
-#include "ClimbingStairs.h"
+#include "dynamic_programing/ClimbingStairs.h"
 
 //********************LRU CACHE*************************
 TEST_CASE("basic fn test for climbing stairs", "[ClimbingStairs]") {

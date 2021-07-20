@@ -1,6 +1,9 @@
 //
 // Created by jfrancis on 3/2/21.
 //
+
+#define CATCH_CONFIG_MAIN
+
 #include <catch2/catch.hpp>
 #include "array/TwoSum.h"
 
