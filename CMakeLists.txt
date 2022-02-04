@@ -21,7 +21,7 @@ add_executable(${PROJECT_NAME} main.cpp
         include/binary/MissingNumber.h
         include/dynamic_programing/WordBreak.h
         include/FibSeq.h include/graph/CourseSchedule.h
-        include/array/TwoSum2.h include/array/BestTimeToBuySellStock2.h include/array/ContainsDuplicate.h include/array/ProductOfArrayExceptSelf2.h include/array/ContainsDuplicate2.h)
+        include/array/TwoSum2.h include/array/BestTimeToBuySellStock2.h include/array/ContainsDuplicate.h include/array/ProductOfArrayExceptSelf2.h include/array/ContainsDuplicate2.h include/array/MaximumSubarray.h)
 
 # TESTING
 find_package(Catch2 REQUIRED)
@@ -40,5 +40,6 @@ add_executable(testMaximumDepthOfBinaryTree include/tree/MaximumDepthOfBinaryTre
 add_executable(testProductOfArrayExceptSelf include/array/ProductOfArrayExceptSelf.h tests/testProductOfArrayExceptSelf.cpp include/array/ProductOfArrayExceptSelf2.h)
 add_executable(testFibSeq include/FibSeq.h tests/testWordBreak.cpp include/graph/CourseSchedule.h tests/testCourseSchedule.cpp)
 add_executable(testContainsDuplicate include/array/ContainsDuplicate.h tests/testContainsDuplicate.cpp include/array/ContainsDuplicate2.h)
+add_executable(testMaximumSubarray include/array/MaximumSubarray.h tests/testMaximumSubarray.cpp)
 
 target_link_libraries(${PROJECT_NAME} Catch2::Catch2)

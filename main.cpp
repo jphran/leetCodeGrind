@@ -4,22 +4,13 @@
 #include <set>
 #include <unordered_map>
 
-enum CLOTHES {
-    JEANS = 0,
-    SHOES,
-    SKIRTS,
-    TOPS
-};
 
 int main() {
-    std::vector<int> prices = {3, 4, 5, 2, 1};
-    std::set<int> priceSet(prices.begin(), prices.end());
-    auto pointer = priceSet.upper_bound(5);
+    std::set<int> sums{};
+    std::vector<int> nums = {20, 20, -1, -1, 20, 20};
 
-    int num = 0;
-    while(pointer != priceSet.end()) {
-        num++;
-        pointer++;
+    for (auto i : nums) {
+
     }
 
     return 0;
