@@ -41,5 +41,6 @@ add_executable(testProductOfArrayExceptSelf include/array/ProductOfArrayExceptSe
 add_executable(testFibSeq include/FibSeq.h tests/testWordBreak.cpp include/graph/CourseSchedule.h tests/testCourseSchedule.cpp)
 add_executable(testContainsDuplicate include/array/ContainsDuplicate.h tests/testContainsDuplicate.cpp include/array/ContainsDuplicate2.h)
 add_executable(testMaximumSubarray include/array/MaximumSubarray.h tests/testMaximumSubarray.cpp)
+add_executable(testMaximumProductSubarray include/array/MaximumProductSubarray.h tests/testMaximumProductSubarray.cpp)
 
 target_link_libraries(${PROJECT_NAME} Catch2::Catch2)
