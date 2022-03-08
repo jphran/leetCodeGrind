@@ -15,19 +15,19 @@ using namespace std;
 class Solution {
 public:
     int maxProduct(vector<int>& nums) {
-        int best_prod = INT32_MIN;
-        int prod = 1;
-        int running_prod = prod;
-        for (int num : nums) {
-            int tmp_prod = prod * num;
-            if (tmp_prod > prod)
-                prod = tmp_prod;
-            else
-                prod = num;
-            best_prod = max(best_prod, prod);
-        }
+        int init = nums[0];
+        int min_prod = init;
+        int max_prod = init;
+        int best = init;
 
-        return best_prod;
+        for (int i = 1; i < nums.size(); i++) {
+            int num = nums[i];
+            int tmp_max = max(num, max(min_prod * num, max_prod * num));
+            min_prod = min(num, min(min_prod * num, max_prod * num));
+            max_prod = tmp_max;
+            best = max(max_prod, best);
+        }
+        return best;
     }
 };
 

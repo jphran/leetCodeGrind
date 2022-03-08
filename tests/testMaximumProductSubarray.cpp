@@ -31,3 +31,19 @@ TEST_CASE("Failed Test", "[MaximumProductSubarray]") {
     Solution s;
     REQUIRE(s.maxProduct(nums) == ans);
 }
+
+TEST_CASE("Failed Test1", "[MaximumProductSubarray]") {
+    std::vector<int> nums = {-2};
+    int ans = -2;
+
+    Solution s;
+    REQUIRE(s.maxProduct(nums) == ans);
+}
+
+TEST_CASE("Failed Test2", "[MaximumProductSubarray]") {
+    std::vector<int> nums = {2,-5,-2,-4,3};
+    int ans = 24;
+
+    Solution s;
+    REQUIRE(s.maxProduct(nums) == ans);
+}
