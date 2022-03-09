@@ -6,7 +6,7 @@
 
 #include <catch2/catch.hpp>
 #include <vector>
-#include "array/ProductOfArrayExceptSelf.h"
+#include "array/ProductOfArrayExceptSelf2.h"
 
 TEST_CASE("Given a array, return the result."
 , "[ProductOfArrayExceptSelf]") {

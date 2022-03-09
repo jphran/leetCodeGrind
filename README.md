@@ -48,4 +48,8 @@
 - <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">LongestSubstringWithoutRepeatingCharacters</a> wtf, i'm so dumb
 - <a href="https://leetcode.com/problems/word-break/">WordBreak</a>
 - <a href="https://leetcode.com/problems/course-schedule/>CourseSchedule</a>
+- maximum product subarray
 
+## NOTES:
+Array:
+- Maximum Subarray is a Kadane algo problem

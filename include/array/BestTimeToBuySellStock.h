@@ -14,7 +14,6 @@
 #define LEETCODEGRIND_BESTTIMETOBUYSELLSTOCK_H
 
 #include <vector>
-#include <set>
 
 class Solution {
 private:
