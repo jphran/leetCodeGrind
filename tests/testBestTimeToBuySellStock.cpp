@@ -31,3 +31,11 @@ TEST_CASE("stock 3", "[BestTimeToBuySellStock]") {
   int ans = 2;
   REQUIRE(s.maxProfit(prices) == ans);
 }
+
+TEST_CASE("stock 4", "[BestTimeToBuySellStock]") {
+    Solution s;
+
+    std::vector<int> prices = {3,2,6,5,0,3};
+    int ans = 4;
+    REQUIRE(s.maxProfit(prices) == ans);
+}
