@@ -16,18 +16,22 @@ class Solution {
 public:
     int maxProduct(vector<int>& nums) {
         int init = nums[0];
-        int min_prod = init;
         int max_prod = init;
-        int best = init;
+        int min_prod = init;
+        int best_prod = init;
+        int tmp{};
+        int num{};
 
         for (int i = 1; i < nums.size(); i++) {
-            int num = nums[i];
-            int tmp_max = max(num, max(min_prod * num, max_prod * num));
-            min_prod = min(num, min(min_prod * num, max_prod * num));
-            max_prod = tmp_max;
-            best = max(max_prod, best);
+            num = nums[i];
+            tmp = max(max(max_prod * num, min_prod * num), num);
+            min_prod = min(min(max_prod * num, min_prod * num), num);
+            max_prod = tmp;
+
+            best_prod = max(max_prod, best_prod);
         }
-        return best;
+
+        return best_prod;
     }
 };
 
