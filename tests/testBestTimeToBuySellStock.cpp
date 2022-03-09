@@ -4,9 +4,11 @@
 
 #define CATCH_CONFIG_MAIN
 
-#include <catch2/catch.hpp>
+#include "catch.hpp"
+//#include <catch2/catch_all.hpp>
 #include <vector>
-#include "array/BestTimeToBuySellStock.h"
+//#include "array/BestTimeToBuySellStock.h"
+#include "array/MaxProfit_2021_12_16.h"
 
 TEST_CASE("Simple Fn Test stock", "[BestTimeToBuySellStock]") {
   std::vector<int> prices = {7,1,5,3,6,4};
@@ -30,4 +32,12 @@ TEST_CASE("stock 3", "[BestTimeToBuySellStock]") {
   std::vector<int> prices = {2,4,1};
   int ans = 2;
   REQUIRE(s.maxProfit(prices) == ans);
+}
+
+TEST_CASE("stock 4", "[BestTimeToBuySellStock]") {
+    Solution s;
+
+    std::vector<int> prices = {3,2,6,5,0,3};
+    int ans = 4;
+    REQUIRE(s.maxProfit(prices) == ans);
 }
