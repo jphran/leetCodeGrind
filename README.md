@@ -52,4 +52,6 @@
 
 ## NOTES:
 Array:
-- Maximum Subarray is a Kadane algo problem
+- Maximum Subarray is a **Kadane algo** problem
+- Maximum product subarray is a **DP (track max, min and best_max)**
+- Find min in rotated array is **binary search**
