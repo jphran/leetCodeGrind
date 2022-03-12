@@ -28,7 +28,8 @@ add_executable(${PROJECT_NAME} main.cpp
         include/array/ProductOfArrayExceptSelf2.h
         include/array/ContainsDuplicate2.h
         include/array/MaximumSubarray.h
-        include/array/MaxProfit_2021_12_16.h include/array/findMinInRotatedSortedArray.h)
+        include/array/MaxProfit_2021_12_16.h
+        include/array/findMinInRotatedSortedArray.h include/array/SearchInRotatedSortedArray.h)
 
 # TESTING
 find_package(Catch2 REQUIRED)
@@ -50,5 +51,6 @@ add_executable(testContainsDuplicate include/array/ContainsDuplicate.h tests/tes
 add_executable(testMaximumSubarray include/array/MaximumSubarray.h tests/testMaximumSubarray.cpp)
 add_executable(testMaximumProductSubarray include/array/MaximumProductSubarray.h tests/testMaximumProductSubarray.cpp)
 add_executable(testFindMinInSortedArray include/array/findMinInRotatedSortedArray.h tests/testFindMinInSortedArray.cpp)
+add_executable(testSearchInRotatedSortedArray tests/testSearchInRotatedSortedArray.cpp include/array/SearchInRotatedSortedArray.h)
 
 target_link_libraries(${PROJECT_NAME} Catch2::Catch2)
