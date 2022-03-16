@@ -3,7 +3,7 @@
 //
 #define CATCH_CONFIG_MAIN
 
-#include "array/ThreeSum.h"
+#include "array/PostNimble/ThreeSum.h"
 #include <catch2/catch.hpp>
 #include <vector>
 

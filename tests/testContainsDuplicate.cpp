@@ -4,8 +4,8 @@
 
 #define CATCH_CONFIG_MAIN
 
+#include "array/PostSarcos/ContainsDuplicate.h"
 #include <catch2/catch.hpp>
-#include "array/ContainsDuplicate.h"
 
 //********************CONTAINS DUPLICATE*************************
 TEST_CASE("Given an integer array nums, return true if any value appears at least twice in the array, "

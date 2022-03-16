@@ -4,9 +4,9 @@
 
 #define CATCH_CONFIG_MAIN
 
+#include "array/PostNimble/ProductOfArrayExceptSelf2.h"
 #include <catch2/catch.hpp>
 #include <vector>
-#include "array/ProductOfArrayExceptSelf2.h"
 
 TEST_CASE("Given a array, return the result."
 , "[ProductOfArrayExceptSelf]") {

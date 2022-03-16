@@ -4,8 +4,8 @@
 
 #define CATCH_CONFIG_MAIN
 
+#include "array/PostSarcos/findMinInRotatedSortedArray.h"
 #include <catch2/catch.hpp>
-#include "array/findMinInRotatedSortedArray.h"
 
 TEST_CASE("Simple Fn Test findMin", "[FindMinInRotatedSortedArray]") {
     std::vector<int> input = {3,4,5,1,2};

@@ -4,9 +4,9 @@
 
 #define CATCH_CONFIG_MAIN
 
+#include "array/PostNimble/SearchInRotatedSortedArray.h"
 #include <catch2/catch.hpp>
 #include <vector>
-#include "array/SearchInRotatedSortedArray.h"
 
 TEST_CASE("Simple Fn Test Search", "[SearchInRotatedSortedArray]") {
     std::vector<int> nums = {4, 5, 6, 7, 0, 1, 2};

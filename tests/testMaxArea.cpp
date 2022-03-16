@@ -4,7 +4,7 @@
 
 #define CATCH_CONFIG_MAIN
 
-#include "array/MaxArea.h"
+#include "array/PostNimble/MaxArea.h"
 #include <catch2/catch.hpp>
 #include <vector>
 

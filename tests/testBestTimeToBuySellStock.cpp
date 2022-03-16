@@ -4,9 +4,9 @@
 
 #define CATCH_CONFIG_MAIN
 
+#include "array/PostNimble/BestTimeToBuySellStock2.h"
 #include <catch2/catch.hpp>
 #include <vector>
-#include "array/BestTimeToBuySellStock2.h"
 
 TEST_CASE("Simple Fn Test stock", "[BestTimeToBuySellStock]") {
   std::vector<int> prices = {7,1,5,3,6,4};

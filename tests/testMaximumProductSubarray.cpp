@@ -4,9 +4,9 @@
 
 #define CATCH_CONFIG_MAIN
 
+#include "array/PostNimble/MaximumProductSubarray.h"
 #include <catch2/catch.hpp>
 #include <vector>
-#include "array/MaximumProductSubarray.h"
 
 TEST_CASE("Simple Fn Test", "[MaximumProductSubarray]") {
     std::vector<int> nums = {2,3,-2,4};

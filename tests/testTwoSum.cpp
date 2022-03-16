@@ -4,8 +4,8 @@
 
 #define CATCH_CONFIG_MAIN
 
+#include "array/PostNimble/TwoSum2.h"
 #include <catch2/catch.hpp>
-#include "array/TwoSum2.h"
 
 //********************TWO SUM*************************
 TEST_CASE("Given an array of integers nums and an integer target, "
