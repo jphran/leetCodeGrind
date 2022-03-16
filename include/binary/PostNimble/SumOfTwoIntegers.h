@@ -9,14 +9,14 @@
 class Solution {
 public:
     int getSum(int a, int b) {
-        int sum{};
+        int tmp{};
 
         do {
-            sum = a ^ b;
+            tmp = a ^ b;
             b = ((unsigned)(a & b) << 1);
-            a = sum;
+            a = tmp;
         } while (b);
-        return sum;
+        return a;
     }
 };
 
