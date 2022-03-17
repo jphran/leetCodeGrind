@@ -1,17 +1,9 @@
-#include <iostream>
-#include <map>
-#include <vector>
-#include <set>
-#include <unordered_map>
+#include <binary/PostNimble/NumberOfOneBits.h>
 
 
 int main() {
-    std::set<int> sums{};
-    std::vector<int> nums = {20, 20, -1, -1, 20, 20};
-
-    for (auto i : nums) {
-
-    }
+    Solution s;
+    s.hammingWeight(11);
 
     return 0;
 }
