@@ -29,7 +29,7 @@ add_executable(${PROJECT_NAME} main.cpp
         include/array/PostNimble/ContainsDuplicate2.h
         include/array/PostNimble/MaximumSubarray.h
         include/array/PostSarcos/MaxProfit_2021_12_16.h
-        include/array/PostSarcos/findMinInRotatedSortedArray.h include/array/PostNimble/SearchInRotatedSortedArray.h include/array/PostNimble/ThreeSum.h include/array/PostNimble/MaxArea.h include/binary/PostNimble/SumOfTwoIntegers.h include/binary/PostNimble/NumberOfOneBits.h)
+        include/array/PostSarcos/findMinInRotatedSortedArray.h include/array/PostNimble/SearchInRotatedSortedArray.h include/array/PostNimble/ThreeSum.h include/array/PostNimble/MaxArea.h include/binary/PostNimble/SumOfTwoIntegers.h include/binary/PostNimble/NumberOfOneBits.h include/binary/PostNimble/CountingBits.h)
 
 # TESTING
 find_package(Catch2 REQUIRED)
