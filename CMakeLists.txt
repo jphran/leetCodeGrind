@@ -11,15 +11,15 @@ add_executable(${PROJECT_NAME} main.cpp
         include/array/PostSarcos/BestTimeToBuySellStock.h
         include/binary/PostSarcos/SumOfTwoIntegers.h
         include/binary/PostSarcos/NumberOf1Bits.h
-        include/dynamic_programing/ClimbingStairs.h
-        include/dynamic_programing/CoinChange.h
+        include/dynamic_programing/PostSarcos/ClimbingStairs.h
+        include/dynamic_programing/PostSarcos/CoinChange.h
         include/linked_list/ReverseLinkedList.h
         include/matrix/SetMatrixZeroes.h
         include/string/LongestSubstringWithoutRepeatingCharacters.h
         include/tree/MaximumDepthOfBinaryTree.h
         include/array/PostSarcos/ProductOfArrayExceptSelf.h
         include/binary/PostSarcos/MissingNumber.h
-        include/dynamic_programing/WordBreak.h
+        include/dynamic_programing/PostSarcos/WordBreak.h
         include/FibSeq.h
         include/graph/CourseSchedule.h
         include/array/PostNimble/TwoSum2.h
@@ -29,7 +29,7 @@ add_executable(${PROJECT_NAME} main.cpp
         include/array/PostNimble/ContainsDuplicate2.h
         include/array/PostNimble/MaximumSubarray.h
         include/array/PostSarcos/MaxProfit_2021_12_16.h
-        include/array/PostSarcos/findMinInRotatedSortedArray.h include/array/PostNimble/SearchInRotatedSortedArray.h include/array/PostNimble/ThreeSum.h include/array/PostNimble/MaxArea.h include/binary/PostNimble/SumOfTwoIntegers.h include/binary/PostNimble/NumberOfOneBits.h include/binary/PostNimble/CountingBits.h include/binary/PostNimble/MissingNumber.h)
+        include/array/PostSarcos/findMinInRotatedSortedArray.h include/array/PostNimble/SearchInRotatedSortedArray.h include/array/PostNimble/ThreeSum.h include/array/PostNimble/MaxArea.h include/binary/PostNimble/SumOfTwoIntegers.h include/binary/PostNimble/NumberOfOneBits.h include/binary/PostNimble/CountingBits.h include/binary/PostNimble/MissingNumber.h include/binary/PostNimble/ReverseBits.h include/dynamic_programing/PostNimble/ClimbingStairs.h)
 
 # TESTING
 find_package(Catch2 REQUIRED)
@@ -39,8 +39,8 @@ add_executable(testLRUCache include/LRUCache.h tests/testLRUCache.cpp)
 add_executable(testCanPlaceFlowers include/CanPlaceFlowers.h tests/testCanPlaceFlowers.cpp)
 add_executable(testBestTimeToBuySellStock include/array/PostSarcos/BestTimeToBuySellStock.h tests/testBestTimeToBuySellStock.cpp include/array/PostNimble/BestTimeToBuySellStock2.h include/array/PostSarcos/MaxProfit_2021_12_16.h)
 add_executable(testSumOfTwoIntegers include/binary/PostSarcos/SumOfTwoIntegers.h include/binary/PostNimble/SumOfTwoIntegers.h tests/binary/testSumOfTwoIntegers.cpp)
-add_executable(testClimbingStairs include/dynamic_programing/ClimbingStairs.h tests/testClimbingStairs.cpp)
-add_executable(testCoinChange include/dynamic_programing/CoinChange.h tests/testCoinChange.cpp)
+add_executable(testClimbingStairs include/dynamic_programing/PostSarcos/ClimbingStairs.h include/dynamic_programing/PostNimble/ClimbingStairs.h tests/testClimbingStairs.cpp)
+add_executable(testCoinChange include/dynamic_programing/PostSarcos/CoinChange.h tests/testCoinChange.cpp)
 add_executable(testReverseLinkedList tests/testReverseLinkedList.cpp)
 add_executable(testSetMatrixZeroes include/matrix/SetMatrixZeroes.h tests/testSetMatrixZeroes.cpp)
 add_executable(testLongestSubstringWithoutRepeatingCharacters include/string/LongestSubstringWithoutRepeatingCharacters.h tests/testLongestSubstringWithoutRepeatingCharacters.cpp)

@@ -4,10 +4,10 @@
 
 #define CATCH_CONFIG_MAIN
 
+#include "dynamic_programing/PostSarcos/WordBreak.h"
 #include <catch2/catch.hpp>
-#include <vector>
 #include <string>
-#include "dynamic_programing/WordBreak.h"
+#include <vector>
 
 TEST_CASE("Given a word dict and a string, "
           "return true if string consists of whole words in dict",

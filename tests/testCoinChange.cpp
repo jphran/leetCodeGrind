@@ -7,7 +7,7 @@
 #include <catch2/catch.hpp>
 #include <iostream>
 
-#include "dynamic_programing/CoinChange.h"
+#include "dynamic_programing/PostSarcos/CoinChange.h"
 
 TEST_CASE("basic fn test for coin change", "[CoinChange]") {
     std::vector<int> coins = {1, 2, 5};
