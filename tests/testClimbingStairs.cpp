@@ -4,7 +4,7 @@
 
 #define CATCH_CONFIG_MAIN
 
-#include "dynamic_programing/PostSarcos/ClimbingStairs.h"
+#include "dynamic_programing/PostNimble/ClimbingStairs.h"
 #include <catch2/catch.hpp>
 
 //********************LRU CACHE*************************
@@ -25,9 +25,17 @@ TEST_CASE("basic fn test for climbing stairs2", "[ClimbingStairs]") {
     int waysToClimb = 5;
     Solution s;
     REQUIRE(s.climbStairs(stairs) == waysToClimb);
-
-//    stairs = 45;
-//    waysToClimb = 1134903170;
-//    REQUIRE(s.climbStairs(stairs) == waysToClimb);
+}
+TEST_CASE("failed test for climbing stairs", "[ClimbingStairs]") {
+    int stairs = 35;
+    int waysToClimb = 14930352;
+    Solution s;
+    REQUIRE(s.climbStairs(stairs) == waysToClimb);
 }
 
+TEST_CASE("failed test for climbing stairs1", "[ClimbingStairs]") {
+    int stairs = 45;
+    int waysToClimb = 1836311903;
+    Solution s;
+    REQUIRE(s.climbStairs(stairs) == waysToClimb);
+}
