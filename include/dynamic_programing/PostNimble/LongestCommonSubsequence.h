@@ -18,10 +18,11 @@ using namespace std;
 class Solution {
 public:
     int longestCommonSubsequence(string text1, string text2) {
-        return lcsRecursive(text1, text2);
+        vector<vector<int>> memo{};
+        return lcsRecursive(text1, text2, memo);
     }
 
-    int lcsRecursive(string text1, string text2) {
+    int lcsRecursive(string text1, string text2, vector<vector<int>>& memo) {
         if (text1.empty() or text2.empty())
             return 0;
 
@@ -32,8 +33,10 @@ public:
                 break;
             }
         }
-        int soln1 = lcsRecursive(text1.substr(1), text2.substr(i + 1)) + 1;
-        int soln2 = lcsRecursive(text1.substr(1), text2);
+        int soln1{};
+        if (i < text2.size())
+            soln1 = lcsRecursive(text1.substr(1), text2.substr(i + 1), memo) + 1;
+        int soln2 = lcsRecursive(text1.substr(1), text2, memo);
         return max(soln1, soln2);
     }
 };
