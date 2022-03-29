@@ -1,10 +1,14 @@
-#include <dynamic_programing/PostNimble/LongestCommonSubsequence.h>
+#include <dynamic_programing/PostNimble/WordBreak.h>
 #include <iostream>
 
 
 int main() {
     Solution s;
-    int ans = s.longestCommonSubsequence("bl", "yby");
+//    std::vector<std::string> wordDict = {"cats", "dog", "sand", "and", "cat"};
+    std::vector<std::string> wordDict = {"apple", "pen"};
+
+
+    int ans = s.wordBreak("penapplepen", wordDict);
     std::cout << ans << std::endl;
 
     return 0;
