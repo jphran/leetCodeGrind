@@ -20,37 +20,24 @@ class ListNode:
 
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
-        if list1 is None and list2 is not None:
-            return list2
-        if list2 is None and list1 is not None:
-            return list1
-        if list1 is None and list2 is None:
-            return None
+        head = ListNode(val=69)
 
-        curr_node = None
-        head = None
-
+        curr_node = head
         while list1 is not None and list2 is not None:
             if list1.val < list2.val:
-                next_node = list1
+                curr_node.next = list1
                 list1 = list1.next
             else:
-                next_node = list2
+                curr_node.next = list2
                 list2 = list2.next
-
-            if curr_node is not None:
-                curr_node.next = next_node
-                curr_node = next_node
-            else:
-                curr_node = next_node
-                head = next_node
+            curr_node = curr_node.next
 
         if list1 is not None:
             curr_node.next = list1
         if list2 is not None:
             curr_node.next = list2
 
-        return head
+        return head.next
 
 
 if __name__ == '__main__':
