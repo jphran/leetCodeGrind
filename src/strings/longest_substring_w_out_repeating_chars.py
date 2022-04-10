@@ -10,17 +10,19 @@ class Solution:
         if len(s) <= 1:
             return len(s)
 
-        num_chars = len(s)
-        dp = [1] * num_chars
+        char_map: dict[str, int] = {s[0]: 0}  # {'char': idx}
         longest_so_far = 1
-        for i in range(1, num_chars):
-            for j in range(i-1, i - 1 - dp[i-1], -1):
-                if s[j] == s[i]:
-                    break
-                dp[i] += 1
-            longest_so_far = max(longest_so_far, dp[i])
-
+        j = 0
+        for i in range(1, len(s)):
+            ch = s[i]
+            if ch in char_map and char_map[ch] >= j:
+                j = char_map[ch] + 1
+                char_map[ch] = i
+            else:
+                char_map[ch] = i
+                longest_so_far = max(longest_so_far, (i - j) + 1)
         return longest_so_far
+
 
 if __name__ == '__main__':
     s = Solution()
