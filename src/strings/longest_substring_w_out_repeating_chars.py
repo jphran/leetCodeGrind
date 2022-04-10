@@ -24,7 +24,7 @@ class Solution:
         return longest_so_far
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     word = "abcabcbb"
     print(s.lengthOfLongestSubstring(word))

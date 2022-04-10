@@ -7,7 +7,8 @@ For example, the pair [0, 1], indicates that to take course 0 you have to first 
 Return true if you can finish all courses. Otherwise, return false.
 """
 
-from collections import deque
+from collections import defaultdict
+
 
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: list[list[int]]) -> bool:
@@ -46,4 +47,3 @@ class Solution:
         visited.add(curr_course)
 
         return False
-

@@ -24,7 +24,7 @@ class Solution:
 
         for ring in range(num_rings + 1):
             # left to right include end points
-            spiral_order.extend(matrix[ring][ring:num_cols - ring])
+            spiral_order.extend(matrix[ring][ring : num_cols - ring])
 
             if len(spiral_order) >= num_cols * num_rows:
                 return spiral_order
@@ -37,7 +37,7 @@ class Solution:
                 return spiral_order
 
             # right to left, include end points
-            spiral_order.extend(matrix[r - ring][-1 - ring:-num_cols - 1 - ring:-1])
+            spiral_order.extend(matrix[r - ring][-1 - ring : -num_cols - 1 - ring : -1])
 
             if len(spiral_order) >= num_cols * num_rows:
                 return spiral_order

@@ -1,6 +1,5 @@
-import queue
-from collections import defaultdict
-from typing import Optional
+from collections import defaultdict, deque
+
 
 class Solution:
     def validTree(self, n: int, edges: list[list[int]]) -> bool:
@@ -14,7 +13,7 @@ class Solution:
 
         visited: set[int] = set()
         finished: set[int] = set()
-        to_visit: queue[tuple[int, int]] = queue.deque()
+        to_visit: deque[tuple[int, int]] = deque()
         to_visit.append((0, -1))
 
         while len(to_visit) != 0:
@@ -32,7 +31,6 @@ class Solution:
                 if neighbor in finished:
                     continue
                 if neighbor != parent:
-                    to_visit.append((neighbor, curr_node)) 
+                    to_visit.append((neighbor, curr_node))
 
         return len(visited) == n
-

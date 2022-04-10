@@ -13,16 +13,19 @@ class Solution:
         intervals.sort(key=lambda x: (x[0], x[-1]))
 
         for i in range(1, len(intervals)):
-            if intervals[i][0] >= intervals[last_included][-1]:  # case where there's no overlap
+            if (
+                intervals[i][0] >= intervals[last_included][-1]
+            ):  # case where there's no overlap
                 last_included = i
-            elif intervals[i][-1] <= intervals[last_included][-1]:  # case where there's full overlap
+            elif (
+                intervals[i][-1] <= intervals[last_included][-1]
+            ):  # case where there's full overlap
                 last_included = i
                 num_removed += 1
             else:  # default case with partial overlap
                 num_removed += 1
 
         return num_removed
-
 
 
 if __name__ == "__main__":

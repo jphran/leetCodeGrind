@@ -48,6 +48,3 @@ class Solution:
             for neighbor in graph[curr_node]:
                 if neighbor != parent:
                     to_visit_queue.append((neighbor, curr_node))
-
-
-

@@ -42,7 +42,8 @@ class Solution(object):
         self._memo[idx] = max(idx_in_soln, idx_not_in_soln)
         return self._memo[idx]
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     s = Solution()
     nums = [2, 1, 1, 2]
     print(s.rob(nums))

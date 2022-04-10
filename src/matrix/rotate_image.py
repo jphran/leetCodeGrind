@@ -24,7 +24,7 @@ class Solution:
                 matrix[j][n - i] = tmp
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     matrix = [[5, 1, 9, 11], [2, 4, 8, 10], [13, 3, 6, 7], [15, 14, 12, 16]]
     for row in matrix:

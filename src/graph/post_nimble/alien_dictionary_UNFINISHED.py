@@ -13,6 +13,9 @@ A string s is lexicographically smaller than a string t if at the first letter w
 before the letter in t in the alien language. If the first min(s.length, t.length) letters are the same,
 then s is smaller if and only if s.length < t.length.
 """
+from typing import Optional
+
+
 class AlienNode:
     def __init__(self, val: str, before: Optional[set[str]] = None):
         self.val = val
@@ -25,7 +28,8 @@ class Solution:
         word_graph: dict[str, set[str]] = {}
         for word in words:
             for char in word:
-                if char not in words_graph.keys():
+                if char not in word_graph.keys():
                     word_graph[char] = set()
                 for node, neighbors in word_graph.items():
                     neighbors.add(word[0])
+        return ""

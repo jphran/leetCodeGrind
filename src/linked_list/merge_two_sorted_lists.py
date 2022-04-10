@@ -19,7 +19,9 @@ class ListNode:
 
 
 class Solution:
-    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+    def mergeTwoLists(
+        self, list1: Optional[ListNode], list2: Optional[ListNode]
+    ) -> Optional[ListNode]:
         head = ListNode(val=69)
 
         curr_node = head
@@ -40,7 +42,7 @@ class Solution:
         return head.next
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     one = ListNode(val=1, next=ListNode(val=2, next=ListNode(val=4)))
     two = ListNode(val=1, next=ListNode(val=3, next=ListNode(val=4)))

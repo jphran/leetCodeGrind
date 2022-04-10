@@ -41,9 +41,14 @@ class Solution:
         return head
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
-    h = ListNode(val=1, next=ListNode(val=2, next=ListNode(val=3, next=ListNode(val=4, next=ListNode(val=5)))))
+    h = ListNode(
+        val=1,
+        next=ListNode(
+            val=2, next=ListNode(val=3, next=ListNode(val=4, next=ListNode(val=5)))
+        ),
+    )
     result = s.removeNthFromEnd(h, 2)
     while result:
         print(result.val)

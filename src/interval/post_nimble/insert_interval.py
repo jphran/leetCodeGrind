@@ -13,7 +13,9 @@ Return intervals after the insertion.
 
 
 class Solution:
-    def insert(self, intervals: list[list[int]], newInterval: list[int]) -> list[list[int]]:
+    def insert(
+        self, intervals: list[list[int]], newInterval: list[int]
+    ) -> list[list[int]]:
         output_interval: list[list[int]] = []
         idx = 0
         len_intervals = len(intervals)
@@ -43,9 +45,14 @@ class Solution:
 
         return output_interval
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     s = Solution()
-    if s.insert([[1,3],[6,9]], [2, 5]) == [[1,5],[6,9]]:
+    if s.insert([[1, 3], [6, 9]], [2, 5]) == [[1, 5], [6, 9]]:
         print("First Success!")
-    if s.insert([[1,2],[3,5],[6,7],[8,10],[12,16]], [4, 8]) == [[1, 2], [3, 10], [12, 16]]:
+    if s.insert([[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]], [4, 8]) == [
+        [1, 2],
+        [3, 10],
+        [12, 16],
+    ]:
         print("Second Success!")
