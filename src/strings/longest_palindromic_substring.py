@@ -14,19 +14,14 @@ class Solution:
         :param s: string to pull palindrome from
         :return: length of palindrome expanded around initial left - right
         """
-        while left >=0 and right < len(s):
-            if s[left] == s[right]:
-                left -= 1
-                right += 1
-            else:
-                break
+        while left >= 0 and right < len(s) and s[left] == s[right]:
+            left -= 1
+            right += 1
+
+        # minus one bc centering around a space
         return right - left - 1
 
     def longestPalindrome(self, s: str) -> str:
-        # trivial
-        if len(s) == 0 or not s:
-            return ""
-
         start, end = 0, 0
         for i in range(len(s)):
             letter_center = self._find_palindrome(i, i, s)
