@@ -13,6 +13,55 @@ Constraints:
 word and prefix consist only of lowercase English letters.
 At most 3 * 104 calls in total will be made to insert, search, and startsWith.
 """
+from typing import Optional
+
+
+class Trie:
+    def __init__(self, terminal: bool = False):
+        self.children: list[Optional[Trie]] = []
+        self.is_terminal = terminal
+
+    def insert(self, word: str) -> None:
+        if not word:
+            return
+
+        parent: Trie = self
+        for idx, c in enumerate(word):
+            node = parent.children[ord(c) - ord("a")]
+            is_terminal = idx == len(word) - 1
+            if node is None:
+                parent.children[ord(c) - ord("a")] = Trie(is_terminal)
+
+            parent = parent.children[ord(c) - ord("a")]
+            if is_terminal:
+                parent.is_terminal = is_terminal
+
+    def _search(self, word: str, is_prefix: bool = False):
+        if not word:
+            return True
+
+        node: Trie = self
+        for c in word:
+            node = node.children[ord(c) - ord("a")]
+            if node is None:
+                return False
+
+        if is_prefix:
+            return True
+        return node.is_terminal
+
+    def search(self, word: str) -> bool:
+        return self._search(word)
+
+    def startsWith(self, prefix: str) -> bool:
+        return self._search(prefix, True)
+
+
+# Your Trie object will be instantiated and called as such:
+# obj = Trie()
+# obj.insert(word)
+# param_2 = obj.search(word)
+# param_3 = obj.startsWith(prefix)
 
 
 # WORKING SOLN JUST SLOW AS SHIT
