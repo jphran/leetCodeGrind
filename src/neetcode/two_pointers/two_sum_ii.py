@@ -22,7 +22,7 @@ class Solution:
         right_idx = len(numbers) - 1
         left_idx = 0
 
-        while left_idx != right_idx:
+        for _ in range(len(numbers)):
             two_sum = numbers[left_idx] + numbers[right_idx]
             if two_sum == target:
                 return [left_idx + 1, right_idx + 1]
