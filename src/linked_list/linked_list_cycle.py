@@ -23,10 +23,35 @@ class ListNode:
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
-        visited = set()
-        while head is not None:
-            if head in visited:
+        node_set: set[ListNode] = set()
+        while head:
+            if head in node_set:
                 return True
-            visited.add(head)
+            node_set.add(head)
             head = head.next
+
         return False
+
+
+if __name__ == '__main__':
+    s = Solution()
+    head = ListNode(1)
+    head.next = ListNode(2)
+    head.next.next = ListNode(3)
+
+    assert not s.hasCycle(head)
+
+    head.next.next.next = head
+    assert s.hasCycle(head)
+
+
+
+# WORKING SOLN
+    # def hasCycle(self, head: Optional[ListNode]) -> bool:
+    #     visited = set()
+    #     while head is not None:
+    #         if head in visited:
+    #             return True
+    #         visited.add(head)
+    #         head = head.next
+    #     return False
