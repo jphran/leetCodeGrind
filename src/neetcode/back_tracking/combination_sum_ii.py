@@ -14,6 +14,37 @@ Constraints:
 
 
 class Solution:
+    def _back_track(
+        self,
+        curr_combination: list[int],
+        idx: int,
+        remainder: int,
+        candidates: list[int],
+        combination_sums: list[list[int]],
+    ) -> None:
+        """Simple back tracking to find the combination sums."""
+        # base case, soln found
+        if remainder == 0:
+            combination_sums.append(curr_combination[:])
+            return
+        # prune dead branch
+        if remainder < 0:
+            return
+
+        while idx < len(candidates):
+            curr_combination.append(candidates[idx])
+            self._back_track(
+                curr_combination,
+                idx + 1,
+                remainder - candidates[idx],
+                candidates,
+                combination_sums,
+            )
+            idx += 1
+            while idx < len(candidates) and candidates[idx] == candidates[idx - 1]:
+                idx += 1
+            curr_combination.pop()
+
     def combinationSum2(self, candidates: list[int], target: int) -> list[list[int]]:
         # setup local vars for back tracking
         combination_sums: list[list[int]] = []
@@ -22,16 +53,6 @@ class Solution:
         # sort to prune possible branches
         candidates.sort()
 
-        def back_track(remainder: int) -> None:
-            """Simple back tracking to find the combination sums."""
-            # base case, soln found
-            if remainder == 0:
-                combination_sums.append(curr_combination[:])
-                return
-            # overshot, prune branch
-            if remainder < 0:
-                return
+        self._back_track(curr_combination, 0, target, candidates, combination_sums)
 
-            for candidate in candidates:
-                # TODO
-                passk
+        return combination_sums
