@@ -1,7 +1,8 @@
 import heapq
 import random
-from collections import Counter
-from itertools import permutations
+import time
+from collections import deque
+
 
 class Result1:
     _vowels: set[str] = {'a', 'e', 'i', 'o', 'u'}
@@ -43,6 +44,24 @@ class Result2:
 
         return heapq.nlargest(k, combos)
 
+
+class Result3:
+    def bestCombo(self, popularity: list[int], k: int) -> list[int]:
+        posTotal = 0
+        n = len(popularity)
+        combos: list[int] = []
+        for i in range(n):
+            p = popularity[i]
+            if p > 0:
+                posTotal += p
+            popularity[i] = abs(p)
+
+        popularity.sort()
+
+
+
+
+
 if __name__ == "__main__":
     # print(Result1.findPasswordStrength("hackerrank"))
     # print(Result1.findPasswordStrength(""))
@@ -54,6 +73,9 @@ if __name__ == "__main__":
     # print(Result2.bestCombo([-10, -5, -3, -2, -1, 0, 5], 20))
     random.seed(7)
     popularity = []
-    for _ in range(25):
+    for _ in range(20):
         popularity.append(random.randint(-10, 10))
+    start = time.perf_counter()
     print(Result2.bestCombo(popularity, 10))
+    # print(run(popularity, 10))
+    print(f"Time Elapsed: {time.perf_counter() - start}")

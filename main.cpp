@@ -1,15 +1,18 @@
-#include <dynamic_programing/PostNimble/WordBreak.h>
+#include <array/PostNimble/EncodeAndDecodeStrings.h>
 #include <iostream>
 
 
 int main() {
-    Solution s;
-//    std::vector<std::string> wordDict = {"cats", "dog", "sand", "and", "cat"};
-    std::vector<std::string> wordDict = {"apple", "pen"};
+    Codec s;
 
+    std::vector<std::string> input{"hello", "world"};
+    auto ans = s.encode(input);
 
-    int ans = s.wordBreak("penapplepen", wordDict);
-    std::cout << ans << std::endl;
+    auto decode = s.decode(ans);
+
+    for (auto& s : decode) {
+        std::cout << s << std::endl;
+    }
 
     return 0;
 }
